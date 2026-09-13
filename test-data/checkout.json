@@ -1,0 +1,10 @@
+{
+  "address": {
+    "country": "US",
+    "postalCode": "10001",
+    "houseNumber": "123",
+    "street": "Automation Avenue",
+    "city": "New York",
+    "state": "New York"
+  }
+}
