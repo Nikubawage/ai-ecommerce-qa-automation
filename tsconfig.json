@@ -7,9 +7,10 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
+    "allowImportingTsExtensions": true,
     "types": ["node"],
     "noEmit": true
   },
-  "include": ["src/**/*.ts", "tests/**/*.ts"],
+  "include": ["src/**/*.ts", "src/**/*.mts", "tests/**/*.ts", "tests/**/*.mts"],
   "exclude": ["node_modules", "playwright-report", "test-results"]
 }

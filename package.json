@@ -4,11 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "playwright test",
+    "test": "playwright test --project=chromium --project=firefox --project=webkit",
     "test:headed": "playwright test --headed",
     "test:debug": "playwright test --debug",
     "report": "playwright show-report",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "test:ui": "playwright test ui --project=chromium",
+    "test:api": "playwright test api --project=chromium",
+    "test:ai": "playwright test --project=ai --workers=1",
+    "test:bdd": "cucumber-js --require-module tsx/cjs --require tests/bdd/quantity.steps.ts features"
   },
   "repository": {
     "type": "git",
@@ -23,8 +27,15 @@
   },
   "homepage": "https://github.com/Nikubawage/ai-ecommerce-qa-automation#readme",
   "devDependencies": {
+    "@cucumber/cucumber": "^13.2.1",
+    "@cucumber/gherkin": "^42.0.1",
     "@playwright/test": "^1.63.0",
     "@types/node": "^22.20.2",
+    "tsx": "^4.23.13",
     "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "@google/genai": "^2.22.0",
+    "dotenv": "^17.4.2"
   }
 }

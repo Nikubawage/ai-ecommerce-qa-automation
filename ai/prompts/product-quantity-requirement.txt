@@ -1,0 +1,20 @@
+Product Quantity Requirement
+
+The product quantity field should accept values from 1 to 99.
+
+Boundary conditions:
+- Quantity 1 is valid.
+- Quantity 99 is valid.
+- Quantity 0 should be normalized to 1.
+- Quantity greater than 99 should be normalized to 99 and display an appropriate validation message.
+
+Generate functional test scenarios using:
+- Equivalence Partitioning
+- Boundary Value Analysis
+- Error Guessing
+
+For each scenario provide:
+- Test scenario
+- Test data
+- Expected result
+- Testing technique used
